@@ -1,0 +1,53 @@
+:root {
+  --pink: #ffd4e5;
+  --peach: #ffe9d6;
+  --brown: #5c3b36;
+  --white: #fffafa;
+}
+
+body {
+  background: var(--peach);
+  color: var(--brown);
+  font-family: "Nunito", "Quicksand", sans-serif;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* header bubble */
+header {
+  background: var(--pink);
+  padding: 1.5rem;
+  border-radius: 1.4rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.intro {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  background: var(--white);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  max-width: 40ch;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.07);
+}
+
+.buttonism {
+  background: var(--pink);
+  border: none;
+  padding: 0.9rem 1.4rem;
+  border-radius: 0.9rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.buttonism:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
