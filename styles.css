@@ -49,9 +49,20 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.04);
 }
 
+.floating {
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
 @keyframes slide-left {
   0%   { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
 }
 
 @media (max-width: 520px) {
